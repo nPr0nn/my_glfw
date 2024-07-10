@@ -3,7 +3,7 @@ CC 		   = gcc
 CLFAGS   = -Wall
 LDFLAGS  = -lm -lX11 -lpthread -lXrandr -lXi -ldl 
 
-run:
+linux:
 	gcc demo/demo.c demo/glad.c $(CLFAGS) $(LDFLAGS) -o out
 	./out
 
