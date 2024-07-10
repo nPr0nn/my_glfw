@@ -10,4 +10,5 @@ Simple GLFW building, stripped away from all complexity layers of cmake. Just ca
 ## Credits
 
 Inspired by: [Gunslinger](https://github.com/MrFrenik/gunslinger)
+
 GLFW Original Repository: [GLFW](https://github.com/glfw/glfw)

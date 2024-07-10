@@ -9,7 +9,7 @@
     #define _GLFW_WIN32
 #endif
 #if defined(__linux__)
-    #if !defined(_GLFW_WAYLAND)     // Required for Wayland windowing
+    #if !defined(_GLFW_WAYLAND)
         #define _GLFW_X11
     #endif
 #endif
@@ -18,11 +18,11 @@
 #endif
 #if defined(__APPLE__)
     #define _GLFW_COCOA
-    #define _GLFW_USE_MENUBAR       // To create and populate the menu bar when the first window is created
-    #define _GLFW_USE_RETINA        // To have windows use the full resolution of Retina displays
+    #define _GLFW_USE_MENUBAR
+    #define _GLFW_USE_RETINA
 #endif
 #if defined(__TINYC__)
-    #define _WIN32_WINNT_WINXP      0x0501
+    #define _WIN32_WINNT_WINXP 0x0501
 #endif
 
 #include "src/context.c"
@@ -72,7 +72,6 @@
     #include "src/x11_monitor.c"
     #include "src/x11_window.c"
     #include "src/xkb_unicode.c"
-    // TODO: Joystick implementation
     #include "src/null_joystick.c"
     #include "src/posix_time.c"
     #include "src/posix_thread.c"
@@ -94,5 +93,4 @@
 #endif
 
 #endif // GLFW_IMPL
-
-#endif // __GLFW_IMPL_H__
+#endif
